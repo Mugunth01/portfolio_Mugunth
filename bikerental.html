@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../project/project_bikerental.html"><b>Bike Rental Application</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Back</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project title -->
+    <section id="title" class="container mt-5 mb-5 animate__animated animate__fadeInLeft">
+        <h1 id="titles">BIKE RENTAL APPLICATION</h1>
+    </section>
+
+    <!-- Language Used Section -->
+    <!-- Language Used Section -->
+<!-- Language Used Section -->
+<section id="language" class="container mt-5 mb-5">
+    <div class="d-flex flex-wrap justify-content-center languageused">
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Front-end:</strong>
+                <p>HTML and CSS</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Back-end:</strong>
+                <p>JavaScript and PHP</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Database:</strong>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add the following CSS in your <style> section or external CSS file -->
+<!-- Updated CSS -->
+<style>
+    /* Highlight box styles */
+    .highlight-box {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+        color: #333; /* Default text color */
+        font-weight: bold; /* Optional: make text more readable */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .highlight-box:hover {
+        background-color: #4c7faf; /* Highlighted color */
+        color: #fff; /* Highlighted text color */
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Flexbox alignment for proper positioning */
+    .languageused {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Adjust spacing around sections */
+    #language {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+</style>
+
+
+
+    <!-- Description Section -->
+    <section id="description" class="container mt-5 mb-5 animate__animated animate__fadeIn">
+        <h2>Description</h2>
+        <p>The Bike Rental System is designed to facilitate the process of renting bicycles to customers through a user-friendly online platform. The system offers various features to manage bike rentals efficiently, ensuring a smooth experience for both customers and administrators</p>
+        <!-- Add other sections as needed -->
+        <div class="section">
+            <p><b>Project Objectives</b><br>
+            🔹 To provide an efficient and easy-to-use platform for renting bikes.<br>
+            🔹 To manage bike inventory and rental transactions effectively.<br>
+            🔹 To offer a secure and reliable system for users and administrators.</p>
+        </div>
+    
+        <div class="section">
+            <p><b>System Features</b><br>
+            🔹 <strong>User Registration and Login:</strong> Secure registration and login for customers to create and manage their accounts.<br>
+            🔹 <strong>Bike Listing:</strong> Browse available bikes with detailed descriptions, pricing, and availability<br>
+            🔹 <strong>Booking and Payment:</strong> Seamlessly book bikes and make online payments through the system.<br>
+            🔹 <strong>Admin Dashboard:</strong> Admin can manage bike inventory, view rental transactions, and handle user queries.<br>
+            🔹 <strong>Review and Rating:</strong> Customers can leave reviews and ratings for bikes they have rented.</p>
+        </div>
+    
+        <div class="section">
+            <p><b>Technical Implementation</b><br>
+            🔹 <strong>Frontend:</strong> Developed using HTML and CSS to create a responsive and user-friendly interface.<br>
+            🔹 <strong>Backend:</strong> Implemented using PHP to handle server-side operations and business logic.<br>
+            🔹 <strong>Database:</strong> MySQL is used to store user data, bike details, rental transactions, and reviews.<br>
+            🔹 <strong>Security:</strong> Implemented security measures such as input validation, password hashing, and secure session management to protect user data.</p>
+        </div>
+    
+        <div class="section">
+            <p><b>Challenges and Solutions</b><br>
+            🔹 <strong>User Authentication:</strong> Implemented robust authentication mechanisms to ensure secure user login and registration.<br>
+            🔹 <strong>Data Integrity:</strong> Ensured data integrity by using transactions and foreign key constraints in the database.<br>
+            🔹 <strong>Scalability:</strong> Designed the system to be scalable, allowing for future enhancements and increased user load.</p>
+        </div>
+    
+        <div class="section">
+            <p>The Bike Rental System is a comprehensive solution for managing bike rentals efficiently. By leveraging modern web technologies such as HTML, CSS, PHP, and MySQL, the system provides a seamless and secure platform for both customers and administrators. The project's success demonstrates the potential of combining intuitive design with robust functionality to create a valuable tool for bike rental businesses.</p>
+        </div>
+
+        <p> Feel free to reach out for any further details or collaboration opportunities.</p>
+    </section>
+
+    <!-- Image Layout Section -->
+     <!-- Image Layout Section -->
+     <div id="Gallery" class="container mt-5 animate__animated animate__zoomInDown">
+        <h2>WORKING IMAGES</h2>
+        <div class="row">
+            <!-- Dynamically render images -->
+            <div id="galleryContainer" class="row"></div>
+        </div>
+    </div>
+    
+    <!-- Enlarged Image Container -->
+    <div id="enlargedImage" style="display: none; text-align: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;">
+        <span onclick="closeImage()" style="position: absolute; top: 10px; right: 10px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+        <img id="largeImage" src="" alt="Enlarged Image" style="max-width: 90%; max-height: 90%; margin-top: 50px;">
+        <span onclick="navigateImage(-1)" style="position: absolute; left: 10px; top: 50%; font-size: 30px; color: white; cursor: pointer;">&#10094;</span>
+        <span onclick="navigateImage(1)" style="position: absolute; right: 10px; top: 50%; font-size: 30px; color: white; cursor: pointer;">&#10095;</span>
+    </div>
+    
+    <script>
+        // Array with all 13 image paths
+        const images = [
+            "./Images/b1.png",
+            "./Images/b2.png",
+            "./Images/b3.png",
+            "./Images/br admin.jpeg",
+            "./Images/br admin2.jpeg",
+            "./Images/br admin3.jpeg",
+            "./Images/br admin4.jpeg",
+            "./Images/br admin5.jpeg",
+            "./Images/br user.jpeg",
+            "./Images/br user2.jpeg",
+            "./Images/br2.jpeg",
+            "./Images/br backend.jpeg",
+            "./Images/br1.jpeg"
+        ];
+    
+        let currentIndex = 0; // To track the currently displayed image
+        let startX = 0; // For touch start position
+    
+        // Dynamically populate the gallery
+        const galleryContainer = document.getElementById("galleryContainer");
+        images.forEach((src, index) => {
+            const colDiv = document.createElement("div");
+            colDiv.classList.add("col-md-4", "mb-4"); // 3 images per row
+            colDiv.innerHTML = `
+                <div class="gallery-item">
+                    <img src="${src}" alt="Image ${index + 1}" class="img-fluid zoom-img" onclick="enlargeImage(${index})">
+                </div>
+            `;
+            galleryContainer.appendChild(colDiv);
+        });
+    
+        function enlargeImage(index) {
+            currentIndex = index;
+            document.getElementById("largeImage").src = images[currentIndex];
+            document.getElementById("enlargedImage").style.display = "block";
+        }
+    
+        function navigateImage(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            document.getElementById("largeImage").src = images[currentIndex];
+        }
+    
+        function closeImage() {
+            document.getElementById("enlargedImage").style.display = "none";
+        }
+    
+        // Touch event listeners for swipe navigation
+        const enlargedImage = document.getElementById("enlargedImage");
+    
+        enlargedImage.addEventListener("touchstart", function (e) {
+            startX = e.touches[0].clientX;
+        });
+    
+        enlargedImage.addEventListener("touchend", function (e) {
+            const endX = e.changedTouches[0].clientX;
+            if (endX - startX > 50) {
+                // Swipe right to go to the previous image
+                navigateImage(-1);
+            } else if (startX - endX > 50) {
+                // Swipe left to go to the next image
+                navigateImage(1);
+            }
+        });
+    </script>
+    
+    <style>
+        .gallery-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px; /* Adjust this based on your needs */
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+    
+        .gallery-item img {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+    
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    
+    
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #081b29!important;  
+}
+body a {
+  color: #00abf0!important;
+}
+/*style for navbar section*/
+.navbar {
+  background-color: transparent!important;
+  padding: 25px!important;
+  font-weight: 600 !important;
+}
+
+.navbar-brand{
+  font-weight: 600;
+  color: #dedede!important;
+
+}
+.navbar-nav .nav-link {
+  font-weight: 500 !important;
+}
+
+.navbar-brand:hover{
+  color: #00abf0!important;
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+.navbar-nav .nav-link {
+  color: #dedede!important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover { 
+  color: #00abf0!important;
+  filter: drop-shadow(0 0 10px #008bbf);
+
+}
+/*style for title section*/
+
+#title,#titles{
+  color: #dedede!important;
+  align-items: center;
+  display: grid;
+}
+
+#title h1:hover{
+  color: #00abf0!important;
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+
+#title a {
+  text-decoration: none;
+}
+
+#description a{
+  color: #00abf0;
+}
+/*style for language section*/
+
+.project-card {
+  background-color: #1a2832 !important;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+.project-card:hover{
+        transform: translateY(-5px); /* Move container up slightly on hover */
+        box-shadow: -5px 5px 10px  #00abf0; /* Shadow */
+        filter: drop-shadow(0 0 10px #00abf0);
+  }
+.project-card p {
+margin-bottom: 1rem;
+color: #dedede;
+}
+
+.project-card strong {
+  color: #000100;
+}
+
+/*style for description section*/
+
+#description h2 ,#Gallery h2{
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the title bold */
+  color: #00abf0;
+  margin-bottom: 20px;
+
+}
+
+#description p {
+  color: #dedede;
+}
+/*style for image section*/
+
+/* Define the keyframes for fade-in and scale-up animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the gallery items */
+.gallery-item {
+  animation: fadeInScale 0.5s ease both; /* Adjust duration and timing function as needed */
+}
+
+/* Optional: If you want to apply the animation on hover */
+.gallery-item:hover {
+  animation: none; /* Remove animation on hover if not desired */
+}
+
+/*style for footer section*/
+
+footer {
+  background-color: #00abf0!important;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer  {
+  color: #dedede;
+}

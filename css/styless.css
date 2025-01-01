@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #081b29!important;  
+}
+h1{
+  color: #00abf0;
+}
+/* Styles for Navbar */
+.navbar {
+  background-color: transparent!important;
+  padding: 25px!important;
+  font-weight: 600 !important;
+}
+
+.navbar-brand{
+  font-weight: 600;
+  color: #dedede!important;
+
+}
+.navbar-nav .nav-link {
+  font-weight: 500 !important;
+}
+
+.navbar-brand:hover{
+  color: #00abf0!important;
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+.navbar-nav .nav-link {
+  color: #dedede!important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover { 
+  color: #00abf0!important;
+  filter: drop-shadow(0 0 10px #008bbf);
+
+}
+
+
+/* Styles for Header Section */
+.header-section {
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+.profile-image img {
+width: 400px; /* Adjust width as needed */
+height: 400px; /* Adjust height as needed */
+border-radius: 50%; /* Creates a circular shape */
+object-fit: cover; /* Ensures the entire image is visible */
+object-position: center; /* Centers the image within the container */
+border: 2px solid #00abf0; /* Optional: Add a border around the photo */
+box-shadow: 0 0 10px #00abf0; /* Optional: Add a subtle shadow effect */
+}
+
+.profile-image img:hover{
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+
+.btn-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #00abf0;
+  color: #dedede;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s ease;
+}
+
+.btn-box a:hover::before {
+  left: 0;
+}
+
+.btn-box a:hover {
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+
+.header-section #navbarNav{
+  padding: 20px;
+}
+.header-section ul .nav-item{
+  list-style-type: none;
+}
+.header-section h1{
+  color: #dedede;
+  font-weight: 700;
+}
+.header-section h3{
+  font-weight: 400 !important;
+  color: #00abf0;
+}
+.header-section p{
+  color: #dedede;
+}
+
+.row.animate__fadeInRight .nav-link i {
+  color: #00abf0;
+  
+}
+
+.row{
+  display: inline-flex !important;
+}
+
+.row.animate__fadeInRight .nav-link i:hover{
+  filter: drop-shadow(0 0 10px #008bbf);
+}
+
+/* Styles for Education Section */
+#education {
+  margin-top: 3rem;
+  color: #dedede;
+}
+#education ul li #title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#education ul li #sub-title {
+  padding-left: 50px;
+}
+
+#education h2 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the title bold */
+  color: #00abf0;
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+#education ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#education ul li {
+  margin-bottom: 1rem;
+}
+
+.image{
+  display: flex;
+  width: 250px;
+  height: 150px;
+}
+
+#education b{
+  color: #00abf0;
+}
+
+/*styles for experinence section*/
+#experience h2{
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the title bold */
+  color: #00abf0;
+  margin-bottom: 20px; /* Add some space below the title */ 
+}
+.project-card {
+  background-color: #1a2832 !important;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    color: #dedede !important;
+    font-weight: bold;
+}
+
+.project-card p {
+margin-bottom: 1rem;
+color: #dedede;
+}
+
+.project-card a {
+color: #00abf0;
+
+}
+
+.project-card a:hover {
+  filter: drop-shadow(0 0 10px #00abf0);
+  text-decoration: none !important;
+  }
+
+/* Styles for Projects Section */
+#projects,#experience {
+  margin-top: 3rem;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the title bold */
+    color: #00abf0;
+    margin-bottom: 20px; /* Add some space below the title */  }
+    
+    .project-card {
+      background-color: transparent ;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .project-card:hover{
+        transform: translateY(-5px); /* Move container up slightly on hover */
+        box-shadow: -5px 5px 10px  #00abf0; /* Shadow */
+        filter: drop-shadow(0 0 10px #00abf0);
+      }
+      
+      .project-card h3 {
+        color: #000000;
+        font-weight: bold;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  }
+  
+  .project-card a {
+    color: #00abf0;
+    }
+    
+    .project-card a:hover {
+      text-decoration: underline;
+      }
+      
+/* Styles for Skills Section */
+#skills h3{
+  color: #dedede !important;
+}
+#skills h2 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the title bold */
+  color: #00abf0;
+  margin-bottom: 20px; /* Add some space below the title */
+  }
+
+  .skill-bar, .interest-bar {
+    margin-bottom: 40px;
+}
+
+.skill, .interest {
+    margin-bottom: 15px;
+}
+
+.skill h3, .interest h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+}
+
+.bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #00abf0; /* Updated color */
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: #dedede;
+    line-height: 25px;
+    width: 0;
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+    position: relative;
+}
+
+.bar-fill span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 25px;
+    display: none; /* Hide percentage text initially */
+}
+
+/*style for contact section*/    
+#contact h2 {
+font-size: 2.5rem; /* Adjust the font size as needed */
+font-weight: bold; /* Make the title bold */
+color: #00abf0;
+margin-bottom: 20px; /* Add some space below the title */
+}
+
+#contact p {
+  margin-bottom: 1rem;
+  color: #dedede;
+}
+#contact a {
+  color: #00abf0;
+}
+
+/*icons*/
+.icon-wrapper {
+  display:grid;
+  align-items: center;
+  margin: 20px;
+  
+  }
+  .icon-wrapper i {
+font-size: 50px;
+margin-right: 10px;
+}
+
+/*footer */
+
+footer {
+  background-color: #00abf0!important;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer  {
+  color: #dedede;
+}
+
+/*contact with me */
+
+.contact_with_me {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.contact_with_me h2 {
+  margin-bottom: 15px;
+}
+.contact_with_me input,
+.contact_with_me {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact_with_me button {
+  padding: 10px 20px;
+  background: #5cb85c;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.contact_with_me button:hover {
+  background: #4cae4c;
+}
+
+
+
+
+
+
+/*sample code*/
+
+
+

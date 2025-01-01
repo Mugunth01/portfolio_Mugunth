@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../project/project_bikerental.html"><b>SMART HOME AUTOMATION</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Back</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project title -->
+    <section id="title" class="container mt-5 mb-5 animate__animated animate__fadeInLeft">
+        <h1 id="titles">SMART HOME  AUTOMATION</h1>
+    </section>
+
+    <!-- Language Used Section -->
+    <!-- Language Used Section -->
+<!-- Language Used Section -->
+<section id="language" class="container mt-5 mb-5">
+    <div class="d-flex flex-wrap justify-content-center languageused">
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Hardware:</strong><p>NodeMCU module</p>  
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Software:</strong><p>Google Home</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box">
+                <strong>Communications:</strong><p>Sinric Pro</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add the following CSS in your <style> section or external CSS file -->
+<!-- Updated CSS -->
+<style>
+    /* Highlight box styles */
+    .highlight-box {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+        color: #333; /* Default text color */
+        font-weight: bold; /* Optional: make text more readable */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .highlight-box:hover {
+        background-color: #4c7faf; /* Highlighted color */
+        color: #fff; /* Highlighted text color */
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Flexbox alignment for proper positioning */
+    .languageused {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Adjust spacing around sections */
+    #language {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+</style>
+
+
+
+    <!-- Description Section -->
+    <section id="description" class="container mt-5 mb-5 animate__animated animate__fadeIn">
+        <h2>Description</h2>
+        <p>The development of a Smart Home Automation System, a comprehensive project aimed at enhancing convenience and control over household appliances through the integration of modern hardware and software technologies. The system utilizes NodeMCU, Sinric Pro, and Google Home to provide a seamless user experience.</p>
+        
+            <p>The primary objective of this project is to create a smart home automation system that allows users to control and monitor their household appliances using hand gestures, voice commands, a web application, and a mobile application. The system is designed to be user-friendly, efficient, and reliable, ensuring maximum convenience and ease of use for the end-users.</p>
+        
+            <p>🔹<b>NodeMCU:</b> An open-source IoT platform that uses the ESP8266 Wi-Fi module, enabling easy connection and control of various appliances.<br>
+            🔹<b>Sinric Pro:</b> A service that facilitates the integration of IoT devices with voice control systems such as Alexa and Google Home.<br>
+            🔹<b>Google Home:</b> A smart speaker that allows for voice-controlled automation, providing an additional layer of convenience and functionality.<br>
+            🔹<b>Python:</b> Used for implementing hand gesture and voice recognition functionalities.<br>
+            🔹<b>Flask:</b> A lightweight Python web framework utilized to create the web application for appliance control.<br>
+            🔹<b>MQTT Protocol:</b> A lightweight messaging protocol that enables communication between the server and NodeMCU modules.<br>
+            🔹<b>Web and Mobile Applications:</b> Developed to offer users a responsive and intuitive interface for remote control and monitoring of their home appliances.</p>
+        
+            <p>The system captures and interprets hand gestures using Python-based recognition technology. Users can perform specific gestures to control various appliances, providing a touch-free method of interaction that enhances convenience and accessibility.Voice commands are processed using Python to enable control over home appliances. This feature allows users to operate their devices simply by speaking, which is particularly useful in situations where manual control is inconvenient or impossible.The web application offers a user-friendly interface that allows users to manage and schedule the operation of their home appliances from any device with internet access. It displays the current status of each appliance and provides easy-to-use controls for turning devices on or off.The mobile application provides an intuitive interface optimized for touch interaction on iOS and Android devices. It supports real-time updates on appliance status and allows users to control their appliances on the go.</p>
+        
+            <p>Throughout the development of the Smart Home Automation System, several technical challenges were encountered and successfully addressed:<br><br>
+            🔹<b>Gesture Recognition Accuracy:</b> Implemented advanced algorithms to improve the accuracy and reliability of hand gesture recognition.<br>
+            🔹<b>Voice Command Interpretation:</b> Enhanced natural language processing capabilities to ensure accurate interpretation of voice commands.<br>
+            🔹<b>System Integration: </b>Seamlessly integrated NodeMCU, Sinric Pro, and Google Home to provide a cohesive and efficient system.<br>
+            🔹<b>Scalability:</b> Designed the system to be scalable, allowing for the addition of new appliances and functionalities without significant modifications.</p>
+        
+            <p>The Smart Home Automation System represents a significant advancement in home automation technology. By leveraging modern hardware and software solutions, the system provides users with an unparalleled level of control and convenience over their household appliances. This project showcases the potential of IoT and AI technologies in creating smarter and more efficient living environments.</p>
+        
+            <p>Feel free to reach out for any further details or collaboration opportunities.</p>
+        </div></p>
+    </section>
+
+    <!-- Image Layout Section -->
+    <div id="Gallery" class="container mt-5 animate__animated animate__zoomInDown">
+        <h2>WORKFLOW</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <!-- Image that can be clicked to enlarge -->
+                    <img id="image" src="./Images/smart.png" alt="Image 3" class="img-fluid zoom-img" onclick="enlargeImage(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Enlarged Image Container -->
+    <div id="enlargedImage" style="display: none; text-align: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;">
+        <span onclick="closeImage()" style="position: absolute; top: 10px; right: 10px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+        <img id="largeImage" src="" alt="Enlarged Image" style="max-width: 90%; max-height: 90%; margin-top: 50px;">
+    </div>
+    
+    <script>
+        function enlargeImage(img) {
+            // Get the image source and set it to the enlarged image container
+            var imgSrc = img.src;
+            document.getElementById("largeImage").src = imgSrc;
+            document.getElementById("enlargedImage").style.display = "block";
+        }
+    
+        function closeImage() {
+            // Hide the enlarged image container
+            document.getElementById("enlargedImage").style.display = "none";
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

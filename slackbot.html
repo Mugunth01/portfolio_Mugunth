@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../project/project_bikerental.html"><b>Expense Management System</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Back</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project title -->
+    <section id="title" class="container mt-5 mb-5 animate__animated animate__fadeInLeft">
+        <h1 id="titles">EXPENSE MANAGEMENT SYSTEM</h1>
+    </section>
+
+    
+    <!-- Language Used Section -->
+<section id="language" class="container mt-5 mb-5">
+    <div class="d-flex flex-wrap justify-content-center languageused">
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box" id="frontend">
+                <strong>Front-end:</strong>
+                <p class="details" id="frontend-details">SlackBot</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box" id="backend">
+                <strong>Back-end:</strong>
+                <p class="details" id="backend-details">Python, OCR, BERT Model</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-4">
+            <div class="highlight-box" id="database">
+                <strong>Database:</strong>
+                <p class="details" id="backend-details">MySQL</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add the following CSS in your <style> section or external CSS file -->
+<style>
+    /* Highlight box styles */
+    .highlight-box {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+        color: #333; /* Default text color */
+        font-weight: bold; /* Optional: make text more readable */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .highlight-box:hover {
+        background-color: #4c7faf; /* Highlighted color */
+        color: #fff; /* Highlighted text color */
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Flexbox alignment for proper positioning */
+    .languageused {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Adjust spacing around sections */
+    #language {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    /* Initially hide details */
+    .details {
+        display: none;
+        color: black; /* Set the text color to black */
+        padding-top: 10px;
+    }
+
+    /* Show the details when clicked */
+    .highlight-box.active .details {
+        display: block;
+    }
+
+    /* Show details when the highlight-box is clicked */
+    .highlight-box:active {
+        cursor: pointer;
+    }
+
+</style>
+
+<!-- Add JavaScript to toggle details visibility -->
+<script>
+    document.getElementById("frontend").addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+
+    document.getElementById("backend").addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+
+    document.getElementById("database").addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+</script>
+
+
+
+
+    <!-- Description Section -->
+    <section id="description" class="container mt-5 mb-5 animate__animated animate__fadeIn">
+        <h2>Description</h2>
+        <p><!-- Add other sections as needed -->
+        <div class="section">
+            <p><b>Problem Statement</b><br>
+            🔹 Expense management is a critical aspect of financial operations within organizations, involving the submission, approval, and processing of expense reports.<br>
+            🔹 Traditional methods of managing expenses involve manual processes such as submitting, reviewing, and approving receipts, which are time-consuming, error-prone, and lead to delays in processing.<br>
+            🔹 The reliance on manual submission and approval of expense reports results in inaccuracies, delays, and a lack of real-time insight into expense data, hindering efficient financial operations.</p>
+        </div>
+    
+        <div class="section">
+            <p><b>Objective:</b><br>
+            🔹 Employees can use the Slack bot to submit their expenses directly through Slack, including details such as amount, category, and receipt images.<br>
+            🔹 The bot prompts the employee to upload a receipt with details like expense amount, category (e.g., travel, meals).<br> 
+            🔹 The bot sends a notification to the employee's manager or the designated approver, asking them to review and approve the expense.<br>
+         </div>
+    
+        <div class="section">
+            <p><b>Technical Implementation</b><br>
+                🔹 <strong>Frontend:</strong> Developed a Slack bot interface where employees can interact by sending bill images to the bot via Slack.<br>
+                🔹 <strong>Backend:</strong> The Slack bot is powered by PHP and utilizes the BERT model for categorizing bill data and extracting relevant information from images using OCR technology.<br>
+                🔹 <strong>Database:</strong> MySQL is used to store user data, employee bill details, transaction records, and the approval status.<br>
+                🔹 <strong>Security:</strong> Implemented secure email communication and bot-session management to ensure proper handling of sensitive employee data.<br>
+                🔹 <strong>Manager Interaction:</strong> The bot sends a categorized bill card with essential details (Employee ID, Name, Bill Category, Total Amount) to the manager, who can accept or reject the bill via buttons, triggering automatic email notifications to the user.<br>
+
+        </div>
+    
+        <div class="section">
+            <p><b>Challenges and Solutions</b><br>
+            🔹 <strong>User Authentication:</strong> Implemented robust authentication mechanisms to ensure secure user login and registration.<br>
+            🔹 <strong>Data Integrity:</strong> Ensured data integrity by using transactions and foreign key constraints in the database.<br>
+            🔹 <strong>Scalability:</strong> Designed the system to be scalable, allowing for future enhancements and increased user load.</p>
+        </div>
+        <p> Feel free to reach out for any further details or collaboration opportunities.</p>
+    </section>
+   <!-- Video Layout Section -->
+<div id="VideoGallery" class="container mt-5 animate__animated animate__zoomInDown">
+    <h2>Video Gallery</h2>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="video-item">
+                <!-- Embed YouTube Video -->
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/o1i7dZPRZLw?start=1" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+            <!-- Link to YouTube video -->
+            <p class="mt-2 text-center">
+                <a href="https://www.youtube.com/watch?v=o1i7dZPRZLw&t=1s" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    Watch on YouTube
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Image Layout Section -->
+<div id="Gallery" class="container mt-5 animate__animated animate__zoomInDown">
+    <h2>WORKFLOW</h2>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="gallery-item">
+                <!-- Image that can be clicked to enlarge -->
+                <img id="image" src="./Images/slackocr.png" alt="Image 3" class="img-fluid zoom-img" onclick="enlargeImage(this)" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enlarged Image Container -->
+<div id="enlargedImage" style="display: none; text-align: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;">
+    <span onclick="closeImage()" style="position: absolute; top: 10px; right: 10px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+    <img id="largeImage" src="" alt="Enlarged Image" style="max-width: 95%; max-height: 95%; margin-top: 50px;">
+</div>
+
+<script>
+    function enlargeImage(img) {
+        // Get the image source and set it to the enlarged image container
+        var imgSrc = img.src;
+        document.getElementById("largeImage").src = imgSrc;
+        document.getElementById("enlargedImage").style.display = "block";
+    }
+
+    function closeImage() {
+        // Hide the enlarged image container
+        document.getElementById("enlargedImage").style.display = "none";
+    }
+</script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>....
